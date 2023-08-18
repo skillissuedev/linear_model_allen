@@ -35,6 +35,10 @@ impl Context {
         if handle == ptr::null_mut() {
             Err(device.check_alc_error().expect_err("handle is null"))
         } else {
+            unsafe {
+                alDistanceModel(AL_LINEAR_DISTANCE_CLAMPED);
+            }
+
             Ok(Self {
                 inner: Arc::new(ContextInner { handle, device }),
             })
