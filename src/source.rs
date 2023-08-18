@@ -211,7 +211,11 @@ impl Source {
     }
 
     pub fn play(&self) -> AllenResult<()> {
-        unsafe { alSourcePlay(self.handle) };
+        unsafe { 
+            alDistanceModel(AL_LINEAR_DISTANCE_CLAMPED);
+            alSourcePlay(self.handle)
+        };
+
         check_al_error()
     }
 
