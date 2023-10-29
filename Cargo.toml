@@ -25,4 +25,4 @@ lewton = "0.10.2"
 
 [build-dependencies]
 cmake = "0.1"
-bindgen = "0.60"
+bindgen = "0.68.1"
