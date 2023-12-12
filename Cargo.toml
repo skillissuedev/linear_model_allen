@@ -1,5 +1,5 @@
 [package]
-name = "allen"
+name = "linear_model_allen"
 authors = ["Alex K.", "unknownbruh"]
 version = "0.2.1"
 edition = "2021"
