@@ -1,12 +1,12 @@
 [package]
 name = "allen"
-authors = ["Alex K."]
+authors = ["Alex K.", "unknownbruh"]
 version = "0.2.1"
 edition = "2021"
 license = "MIT"
-description = "Modern OpenAL bindings for Rust"
-homepage = "https://github.com/digitaljokerman/allen"
-repository = "https://github.com/digitaljokerman/allen"
+description = "Modern OpenAL bindings for Rust, but with linear distance model"
+homepage = "https://github.com/unknownbruhhaha/linear_model_allen"
+repository = "https://github.com/unknownbruhhaha/linear_model_allen"
 readme = "README.md"
 categories = ["api-bindings", "multimedia::audio"]
 keywords = ["audio", "openal"]
