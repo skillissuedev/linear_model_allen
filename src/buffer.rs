@@ -1,15 +1,16 @@
 use crate::{
-    check_al_error, check_al_extension, getter, properties::PropertiesContainer, sys::*,
+    check_al_error, check_al_extension, getter, properties::PropertiesContainer,
     AllenResult, Context,
 };
 use num_derive::{FromPrimitive, ToPrimitive};
-use num_traits::{FromPrimitive, ToPrimitive};
+use num_traits::FromPrimitive;
 #[cfg(feature = "serde")]
 use serde::{Deserialize, Serialize};
 use std::{
     ffi::{c_void, CString},
     mem::size_of,
 };
+use oal_sys::*;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, FromPrimitive, ToPrimitive)]
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]

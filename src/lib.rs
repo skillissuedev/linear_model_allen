@@ -5,7 +5,6 @@ mod device;
 mod properties;
 mod listener;
 mod source;
-pub(crate) mod sys;
 
 pub use buffer::*;
 pub use context::*;
@@ -13,13 +12,12 @@ pub use device::*;
 pub use listener::*;
 pub(crate) use properties::*;
 pub use source::*;
+use oal_sys::*;
 
-use crate::sys::*;
 #[cfg(feature = "serde")]
 use serde::{Deserialize, Serialize};
 use std::{
-    ffi::{CStr, CString},
-    ptr,
+    ffi::CStr,
 };
 use thiserror::Error;
 

@@ -1,6 +1,7 @@
 use crate::{
-    check_al_error, sys::*, AllenResult, Context, Float3, Orientation, PropertiesContainer,
+    check_al_error, AllenResult, Context, Float3, Orientation, PropertiesContainer,
 };
+use oal_sys::*;
 
 /// A [`Context`]'s listener.
 #[non_exhaustive]

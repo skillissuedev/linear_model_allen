@@ -1,6 +1,7 @@
-use crate::{check_al_error, sys::*, AllenResult, Buffer, Context, Float3, PropertiesContainer};
+use crate::{check_al_error, AllenResult, Buffer, Context, Float3, PropertiesContainer};
 use num_derive::{FromPrimitive, ToPrimitive};
 use num_traits::{FromPrimitive, ToPrimitive};
+use oal_sys::*;
 
 /// The state of a [`Source`].
 #[derive(Debug, Clone, Copy, PartialEq, Eq, FromPrimitive, ToPrimitive)]

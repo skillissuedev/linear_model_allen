@@ -1,10 +1,11 @@
-use crate::{get_string, sys::*, AllenResult, Buffer, Device, Listener, Source};
+use crate::{get_string, AllenResult, Buffer, Device, Listener, Source};
 use lazy_static::lazy_static;
 use std::{
     ffi::CString,
     ptr,
     sync::{Arc, Mutex, MutexGuard},
 };
+use oal_sys::*;
 
 lazy_static! {
     static ref SINGLE_CONTEXT_LOCK: Mutex<()> = Mutex::new(());
