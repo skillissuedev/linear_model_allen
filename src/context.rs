@@ -5,7 +5,7 @@ use std::{
     ptr,
     sync::{Arc, Mutex, MutexGuard},
 };
-use oal_sys::*;
+use oal_sys_windows::*;
 
 lazy_static! {
     static ref SINGLE_CONTEXT_LOCK: Mutex<()> = Mutex::new(());

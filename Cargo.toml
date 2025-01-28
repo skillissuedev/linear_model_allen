@@ -1,12 +1,12 @@
 [package]
 name = "linear_model_allen"
-authors = ["Alex K.", "unknownbruh"]
-version = "0.3.0"
+authors = ["Alex K.", "sid"]
+version = "0.4.0"
 edition = "2021"
 license = "MIT"
 description = "Modern OpenAL bindings for Rust, but with some changes"
-homepage = "https://github.com/unknownbruhhaha/linear_model_allen"
-repository = "https://github.com/unknownbruhhaha/linear_model_allen"
+homepage = "https://github.com/skillissuedev/linear_model_allen"
+repository = "https://github.com/skillissuedev/linear_model_allen"
 readme = "README.md"
 categories = ["api-bindings", "multimedia::audio"]
 keywords = ["audio", "openal"]
@@ -18,7 +18,7 @@ num-traits = "0.2"
 num-derive = "0.3"
 serde = { version = "1", features = ["derive"], optional = true }
 lazy_static = "1.4.0"
-oal-sys = "0.0.2"
+oal-sys-windows = "0.0.3"
 
 [dev-dependencies]
 hound = "3.4.0"

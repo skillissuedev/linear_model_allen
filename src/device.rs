@@ -1,6 +1,6 @@
 use crate::{AllenError, AllenResult, Context};
 use std::{ffi::CStr, ptr, sync::Arc};
-use oal_sys::*;
+use oal_sys_windows::*;
 
 pub(crate) struct DeviceInner {
     pub(crate) handle: *mut ALCdevice,

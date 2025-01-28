@@ -10,7 +10,7 @@ use std::{
     ffi::{c_void, CString},
     mem::size_of,
 };
-use oal_sys::*;
+use oal_sys_windows::*;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, FromPrimitive, ToPrimitive)]
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]

@@ -12,7 +12,7 @@ pub use device::*;
 pub use listener::*;
 pub(crate) use properties::*;
 pub use source::*;
-use oal_sys::*;
+use oal_sys_windows::*;
 
 #[cfg(feature = "serde")]
 use serde::{Deserialize, Serialize};
